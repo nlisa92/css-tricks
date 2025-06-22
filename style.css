@@ -267,54 +267,77 @@ margin-bottom: 100px;
 margin-top: 100px;
 }
 .subscribe, .out-shops {
-width: 540px;
-height: 212px;
-padding: 20px;
-position: relative;
-overflow: hidden;
-background: #F13C6E;
+    width: 540px;
+    height: 212px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background: #F13C6E;
 }
+
 .subscribe img, .out-shops img {
-position: absolute;
-width: 140px;
-height: 140px;
-top: 36px;
-right: 40px;
-object-fit: contain;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 36px;
+    right: 40px;
+    object-fit: contain;
 }
+
+.subscribe .title, 
+.out-shops .title,
+.subscribe .subtitle, 
+.out-shops .subtitle {
+    position: absolute;
+    left: 40px;
+    color: white;
+}
+
 .subscribe .title, .out-shops .title {
-position: absolute;
-top: 35px;
-left: 40px;
-font-weight: 700;
-font-size: 18px;
-line-height: 100%;
-color: white;
-width: 250px;
+    top: 35px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    width: 250px;
 }
+
 .subscribe .subtitle, .out-shops .subtitle {
-position: absolute;
-top: 77px;
-left: 40px;
-font-weight: 400;
-font-size: 14px;
-line-height: 141%;
-color: white;
-width: 231px;
+    top: 77px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 141%;
+    width: 231px;
 }
-.subscribe_input {
-position: absolute;
-width: 225px;
-height: 35px;
-border-radius: 30px ;
-border: none;
-background: white;
-bottom: 37px;
-left: 40px;
-font-weight: 400;
-font-size: 14px;
-text-align: center;
-cursor: pointer;
+/* Новые стили для контейнера */
+.subscribe-input-container {
+    position: absolute;
+    bottom: 37px;
+    left: 40px;
+    width: 225px;
+    height: 35px;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden; 
+}
+
+.subscribe-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding: 0 15px;
+    font-size: 14px;
+    outline: none;
+}
+
+.subscribe-btn {
+    width: 40px;
+    height: 100%;
+    background: white;
+    border: none;
+    color: #F13C6E;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
 }
 .out-shops_button {
 position: absolute;
